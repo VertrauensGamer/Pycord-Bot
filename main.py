@@ -62,6 +62,7 @@ async def help(ctx):
     embed.set_thumbnail(url="https://cdn.discordapp.com/icons/1267489664105844871/031582b6db6edc0d014d85e23ee5b22c.webp?size=96")
     
     await ctx.respond(embed=embed)
+    await ctx.respond(discord.ui.button(label="Creator of the Bot", style=discord.ButtonStyle.url, url="https://github.com/VertrauensGamer"))
     
 @bot.command()
 async def ping(ctx):
